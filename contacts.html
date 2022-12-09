@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+
+     <!-- -----------AGREGAR LOS CSS----- -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index_movil.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/about_movil.css">
+  <link rel="stylesheet" href="styles/tinycarousel.css" />
+  <link rel="stylesheet" href="styles/contacts.css">
+  <link rel="stylesheet" href="styles/contacts_movil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
+
+
+
+  <!-- --------------------------------------- -->
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+
+  <!-- -----------AGREGAR los javascript------ -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <!-- se ahce a conexion a lapagiina de fontawesome para utlizar iconos online -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+  <script src="fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="/javascript/jquery.tinycarousel.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/59df0bc859.js" crossorigin="anonymous"></script>
+
+  <script src="javascript/responsiveslides.min.js"></script>
+
+  <script src="javascript/wow.min.js"></script>
+
+<!-- -----------------javascript del formulario---------- -->
+<script type="text/javascript">
+    function validar_cotizar(){
+      if( document.formul_cotizar.nombre.value.length==0) {
+        alert("Tienes que escribir tu NOMBRE")
+        document.formul_cotizar.nombre.focus()
+        return 0;
+      }
+            
+      if( document.formul_cotizar.correo.value.length==0) {
+        alert("Tienes que escribir un CORREO")
+        document.formul_cotizar.correo.focus()
+        return 0;
+      }
+      if( document.formul_cotizar.ciudad.value.length==0) {
+        alert("Tienes que escribir tu CIUDAD")
+        document.formul_cotizar.ciudad.focus()
+        return 0;
+      }
+      
+      document.formul_cotizar.submit();
+    }
+   
+  </script>
+
+
+
+  <!-- --------------------------------------- -->
+
+</head>
+<body>
+    <i id="subir" class="fas fa-arrow-circle-up"></i>
+    <header class="cabe">
+      <div class="cabe_bac">
+        <div class="cabe_g ancho">
+          <div class="cabe_ico">
+            <i class="b fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;
+            1-800-1234-567 1-800-6780-345&nbsp;&nbsp;&nbsp;
+            <i class='b fa-solid fa-map-location-dot btn_maps'></i>&nbsp;&nbsp;&nbsp;
+            2130 Fulton Street, San Diego, CA 94117-1080 USA&nbsp;&nbsp;&nbsp;
+            <i class='b fas fa-envelope'></i>&nbsp;&nbsp;&nbsp;
+            mail@demolink.org
+          </div>
+          <div class="cabe_redes">
+            <a href='#'><i class='b fa-brands fa-facebook btn_facebook'></i></a>
+  
+            <a href='#'><i class="b fab fa-twitter"></i></a>
+            <a href='#'><i class='b fa-brands fa-square-instagram btn_instagran'></i></a>
+            <a href='#'><i class='b fab fa-google btn_google'></i></a>
+            <a href='#'><i class='b fab fa-linkedin-in btn_linkedin'></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="cabe_menu ancho">
+        <div class="cabe_fn">
+          <div class="cabe_iconomenu" id="menu">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <figure>
+            <img src="img/logo-default.png" alt="" />
+          </figure>
+          <i class='z fa-solid fa-magnifying-glass btn_lupa'></i>
+        </div>
+  
+        <nav>
+          <ul id="contenedormenu" class="cont">
+            <li><a href='index.html' class="btn_ancla">HOME</a></li>
+            <li><a href='about.html' class="btn_ancla">ABOUT</a></li>
+            <li><a href='#' class="btn_ancla">DEPARTAMENTS</a></li>
+            <li><a href='#' class="btn_ancla">GALLERY</a></li>
+            <li><a href='.html' class="btn_ancla">CONTACTS</a></li>
+          </ul>
+        </nav>
+        <aside class="cabe_asi">
+          <a href='#'>VIEW TIMETABLE</a>
+        </aside>
+      </div>
+    </header>
+
+      <!-- -----------ABOUT----------------- -->
+      <div class="cont_about">
+        <div class="info_about ancho">
+            <p class="titulo_about ">CONTACTS</p>
+            <P class="p borde">home --> Contacts</P>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------- -->
+    <section class="cont_video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/On2mK58ujrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+
+   <div class="con_btn_modal"> <a href="#" class="btn_modal " id="Btn">CONTACTAR</a></div>
+    
+<!-- ------------------MODAL------- -->
+
+<section id="modal" class="fondomodal">
+    <div class="contenidomodal">
+        <div class="estructuramodal">
+            <p>FORM</p>
+            <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+        </div>
+        <!--/*-----.divfotmul_cotizar */-->
+        <div class="divformul_cotizar borde ">
+            <form action="#" method="#" name="formul_cotizar">
+                
+                <p class="p_obligatorio">Los campos que tenga un <span class="co_red">*</span> son obligatorios</p>
+            
+                <input type="text" placeholder="Nombre Apellido *" name="nombre"><br><br>
+                <input type="e-mail" placeholder="Correo electrocnico *" name="correo"><br><br>
+                <input type="tel" maxlength="10" placeholder="Numero celular" name="telefono"><br><br>
+                <input type="text" placeholder="Ciudad *" name="ciudad"><br><br>
+                
+                <input type="button" value="Cotizar" class="btn_cotizar" onclick="validar_cotizar()">
+            </form>
+            <br>
+        </div>
+
+    </div>
+   
+</section>
+
+ <!-- FUNCIONES JAVASCRIPT PARA EL MODAL-->
+ <script>
+    var fondomodal = document.getElementById("modal");
+    var btn = document.getElementById("Btn");
+    var cerrar = document.getElementById("cerrarbtn");
+
+    function tiempo() {
+      fondomodal.style.display = "block";
+    }
+    setTimeout(tiempo, 5000);
+
+    btn.onclick = function () {
+      fondomodal.style.display = "block";
+    };
+    cerrar.onclick = function () {
+      fondomodal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == fondomodal) {
+        fondomodal.style.display = "none";
+      }
+    };
+  </script>
+
+<!-- ---------- video------- -->
+  
+
+
+
+
+
+
+  <footer>
+    <div class="cont_gris_footer ancho">
+      <div>
+        <figure class="borde"><img src="img/logo-footer.png" alt=""></figure>
+      </div>
+      <p class="privacy borde">© 2022 All Rights Reserved. Privacy Policy</p>
+      <div class="cont_redes_fotter borde">
+        <a href='#'><i class='fa-brands fa-facebook btn_facebook'></i></a><!-- icono facebook-->
+        <a href='#'><i class='fab fa-twitter btn_twitter'></i></a><!-- icono twitter-->
+        <a href='#'><i class='fa-brands fa-square-instagram btn_instagran'></i></a><!-- icono instagram-->
+        <a href='#'><i class='fab fa-google btn_google'></i></a><!-- icono google-->
+        <a href='#'><i class='fab fa-linkedin-in btn_linkedin'></i></a><!-- icono linkedin-->
+      </div>
+    </div>
+  </footer>
+
+
+
+    <script src="javascript/funciones.js"></script>
+</body>
+</html>

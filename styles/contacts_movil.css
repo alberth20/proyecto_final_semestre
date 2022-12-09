@@ -1,0 +1,36 @@
+@media screen and (max-width: 390px){
+    
+    .contenidomodal {
+        width: 80%;
+        padding: 10px;
+      }
+      
+      .cerrarmodal {
+        right: 20px;
+        margin-right: 10px;
+      }
+      .divformul_cotizar{
+        width: 320px;
+        margin: auto;
+
+        text-align: center;
+    }
+    
+    .contenidomodal {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 350px;
+        position: relative;
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

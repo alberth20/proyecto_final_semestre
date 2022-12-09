@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Secular+One&display=swap');
+:root {
+    --fondo_gris: #3d3d3d;
+    --ico_gris: #838386;
+    --colorazul: #008ae3;
+    --fondo_gris_section: #f2f3f9;
+    --font-family: 'Secular One', sans-serif;
+}
+
+body{
+
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+ }
+ /* a */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .ancho{
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px red solid ; */
+   }
+   .cont_about{
+    background-image: url("/img/bacgra_azul.jpg");
+    height: 450px;
+    margin-bottom: 50px;
+   }
+
+   .info_about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center ;
+    height: 450px;
+    line-height: 100px;
+   }
+   .titulo_about{
+    font-family: var(--font-family);
+    color: white;
+    font-size: 100px;
+
+   }
+   .p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+   }
+
+   /* ACORDEON*/
+   .fondo_gris_acordeon{
+    background-color: var(--fondo_gris_section);
+    padding: 70px 0px 70px 0px;
+   }
+   .titu_fregue{
+    font-family: var(--font-family);
+    font-size: 30px;
+    color:black
+   }
+   .hr_titu_fregue{
+    margin-top: 15px;
+    background-color: var(--colorazul);
+    height: 2px;
+    width: 100px;
+     border: 1px var(--colorazul) solid;
+
+   }
+   .acordeon {
+    width: 600px;
+    margin: auto;
+    border-top: 1px var(--ico_gris) solid;
+   }
+  .acordeon_titulo {
+    color: #666;
+    padding: 20px;
+    font-size: 14px;
+    height: 70px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+
+    align-items:center;
+  }
+  .acordeon_contenido {
+    display: none;
+    margin: 0;
+
+    padding: 1em 1em 1.5em;
+
+  }
+  .iconos{
+    position: relative;
+    padding:0;
+    width:15px;
+    height:15px;
+    margin-right: 10px;
+  }
+  .iconos i{
+    padding: 3px;
+
+    color: var(--colorazul);
+    border-radius: 5px;
+  }
+  .mas1, .mas2, .mas3,.mas4{
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+  }
+  .menos1, .menos2, .menos3,.menos4{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: 0;
+  }
+  .desaparecer{
+    opacity: 0;
+  }
+
+  .cont_acordeon_skills{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+  }
+  .article_img_fondo{
+    background-image: url(/img/accordions-1.jpg);
+    background-size: cover;
+    width: 540px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .article_img_fondo:hover #info{
+    top: 0%;
+  }
+  #info{
+    background-color:rgba(102, 102, 102, 0.308) ;
+    color: white;
+    width: 540px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: all 1s;
+  }
+  .info h3{
+    color:var(--colorazul);
+  }
+  #info a{
+    border-radius: 5px;
+    background-color: var(--colorazul);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+  }
