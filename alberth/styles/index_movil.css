@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --fondo_gris: #3d3d3d;
+  --ico_gris: #838386;
+  --colorazul: #008ae3;
+  --fondo_gris_section: #f2f3f9;
+}
+@media screen and (max-width: 390px) {
+  .cabe_bac {
+    display: none;
+  }
+  .cabe_menu {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cabe_fn {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+  }
+  .texto {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    z-index: 100;
+    color: white;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+    background: var(--titulo);
+    padding: 0px 0px;
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    background-color: white;
+    z-index: 1000;
+    /* display: none; */
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  nav ul.abrirmenu {
+    left: 0px;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    display: block;
+  }
+  .cabe_fn .cabe_iconomenu {
+    display: block;
+    /* color: #f1f7fc;
+    background: #3da3d4; */
+  }
+  .cabe_fn .z {
+    display: block;
+  }
+  .cabe_asi {
+    display: none;
+  }
+  .about {
+ 
+    margin: 60px auto;
+    padding: 10px 0px;
+  }
+  .about_c {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 70px auto;
+  }
+  .about_c figure {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .about_ar {
+    line-height: 30px;
+    padding: 0px 20px;
+  }
+  .about_ar h2 {
+    font-size: 22px;
+  }
+  .OUR_ADVANTAGES {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .article_advantage {
+    margin-bottom: 60px;
+   
+  }
+  .cont_encabezado {
+    line-height: 30px;
+  }
+  /*LATEST BLOG POSTS*/
+  .cont_lastest {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 380px;
+    padding: 10px;
+  }
+  .article_lastest {
+    margin-bottom: 50px;
+  }
+  .cn {
+    text-align: center;
+  }
+  /* FOOTER*/
+
+  .cont_gris_footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 200px;
+  }
+}

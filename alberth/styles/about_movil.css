@@ -1,0 +1,59 @@
+@media screen and (max-width: 390px){
+    .titulo_about{
+        font-family: var(--font-family);
+        color: white;
+        font-size:70px;
+        
+       }
+       .cont_acordeon_skills{
+        display: flex;
+        flex-direction: column;
+        
+        
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+      .cont_skills{
+        width: 100%;
+      padding: 20px;
+        
+      }
+      .acordeon{
+      width: 100%;
+      padding: 15px;
+      
+      }
+    
+      .article_img_fondo{
+    background-image: url(/img/accordions-1.jpg);
+    background-size: cover;
+    width: 370px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+    .titu_fregue{
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .hr_titu_fregue{
+        margin-top: 15px;
+        background-color: var(--colorazul);
+        height: 2px;
+        width: 100px;
+         border: 1px var(--colorazul) solid;
+    margin: auto;
+       }
+    
+    
+    
+    
+    
+    
+    
+    
+}

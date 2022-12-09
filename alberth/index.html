@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfa Health</title>
+  <!-- -----------AGREGAR LOS CSS----- -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index_movil.css">
+
+
+
+  <!-- --------------------------------------- -->
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+
+  <!-- -----------AGREGAR los javascript------ -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <!-- se ahce a conexion a lapagiina de fontawesome para utlizar iconos online -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+  <script src="fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="/javascript/jquery.tinycarousel.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/59df0bc859.js" crossorigin="anonymous"></script>
+
+  <script src="javascript/responsiveslides.min.js"></script>
+
+  <script src="javascript/wow.min.js"></script>
+
+  <!-- --------------------------------------- -->
+</head>
+
+<body>
+  <i id="subir" class="fas fa-arrow-circle-up"></i>
+  <header class="cabe">
+    <div class="cabe_bac">
+      <div class="cabe_g ancho">
+        <div class="cabe_ico">
+          <i class="b fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;
+          1-800-1234-567 1-800-6780-345&nbsp;&nbsp;&nbsp;
+          <i class='b fa-solid fa-map-location-dot btn_maps'></i>&nbsp;&nbsp;&nbsp;
+          2130 Fulton Street, San Diego, CA 94117-1080 USA&nbsp;&nbsp;&nbsp;
+          <i class='b fas fa-envelope'></i>&nbsp;&nbsp;&nbsp;
+          mail@demolink.org
+        </div>
+        <div class="cabe_redes">
+          <a href='#'><i class='b fa-brands fa-facebook btn_facebook'></i></a>
+
+          <a href='#'><i class="b fab fa-twitter"></i></a>
+          <a href='#'><i class='b fa-brands fa-square-instagram btn_instagran'></i></a>
+          <a href='#'><i class='b fab fa-google btn_google'></i></a>
+          <a href='#'><i class='b fab fa-linkedin-in btn_linkedin'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cabe_menu ancho">
+      <div class="cabe_fn">
+        <div class="cabe_iconomenu" id="menu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <figure>
+          <img src="img/logo-default.png" alt="" />
+        </figure>
+        <i class='z fa-solid fa-magnifying-glass btn_lupa'></i>
+      </div>
+
+      <nav>
+        <ul id="contenedormenu" class="cont">
+          <li><a href='#' class="btn_ancla">HOME</a></li>
+          <li><a href='about.html' class="btn_ancla">ABOUT</a></li>
+          <li><a href='#' class="btn_ancla">DEPARTAMENTS</a></li>
+          <li><a href='#' class="btn_ancla">GALLERY</a></li>
+          <li><a href='contacts.html' class="btn_ancla">CONTACTS</a></li>
+        </ul>
+      </nav>
+      <aside class="cabe_asi">
+        <a href='#'>VIEW TIMETABLE</a>
+      </aside>
+    </div>
+  </header>
+
+  <!-- SLIDE DE FOTO -->
+  <section>
+    <article>
+      <div class="contenedor_slide">
+        <ul class="rslides">
+          <li><img src="img/slide-1.jpg" alt="" /></li>
+          <li><img src="img/slide-2.jpg" alt="" /></li>
+          <li><img src="img/slide-3.jpg" alt="" /></li>
+
+        </ul>
+
+        <div class="texto ">
+          <h1 class="wow animate__animated animate__bounceInLeft animate__delay-1s">QUALIFIED TEAM OF DOCTORS</h1>
+          <br>
+          <p class="wow animate__animated animate__bounceInLeft animate__delay-2s">Our doctors deliver the highest
+            standard of professional health care.</p>
+          <div class=' class="wow animate__animated animate__bounceInLeft animate__delay-3s" cont_btn_genral'><a
+              href='#' class='btn_learmore borde'>LEAR MORE</a></div>
+        </div>
+      </div>
+    </article>
+
+
+    <script>
+      $(function () {
+        $(".rslides").responsiveSlides();
+      });
+
+      new WOW().init();
+    </script>
+  </section>
+  <!-- -------------------------------------------------------- -->
+   <section class="parrallaxas">
+    
+  </section>
+  <div class="cont_encabezado">
+    <p>DEPARTMENTS</p>
+    <hr>
+  </div>
+ 
+  <!-- -----------flaxebox galeria de fotos----------------- -->
+  <section id="galeria">
+    <div>
+      <a href="img/cardiology.jpg" class="fancybox" title="Cardiology" rel="gallery1">
+        <img src="img/cardiology.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;cardiology</h3>
+    </div>
+    <div>
+      <a href="img/dentista.jpg" class="fancybox" title="Dentista" rel="gallery1">
+        <img src="img/dentista.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;Dentista</h3>
+    </div>
+    <div>
+      <a href="img/diagnostic.jpg" class="fancybox" title="Diagnostic" rel="gallery1">
+        <img src="img/diagnostic.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;Diagnostic</h3>
+    </div>
+    <div>
+      <a href="img/neurology.jpg" class="fancybox" title="neurology" rel="gallery1">
+        <img src="img/neurology.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;Neurology</h3>
+    </div>
+    <div>
+      <a href="img/Ophthalmology.jpg" class="fancybox" title="Ophthalmology" rel="gallery1">
+        <img src="img/Ophthalmology.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;Ophthalmology</h3>
+    </div>
+    <div>
+      <a href="img/pedriatrick.jpg" class="fancybox" title="pedriatrick" rel="gallery1">
+        <img src="img/pedriatrick.jpg" alt="" />
+      </a>
+      <h3>&nbsp;&nbsp;Pedriatrick</h3>
+    </div>
+
+
+
+
+  </section>
+  <!-- ------------------------------ -->
+
+  <section class="about">
+    <div class="about_c ancho">
+      <figure>
+        <img src="img/tres_doc.jpg" alt="">
+      </figure>
+      <article class="about_ar">
+        <h2>A FEW WORDS ABOUT US</h2>
+        <hr>
+        <p>Founded in 1999, Alfa Health is an award-winning medical center providing first-class healthcare services to
+          local residents and city guests.</p>
+        <br>
+        <p class="parra2"> <em>You can trust that your health is being managed by the professional team of health care
+          experts who care about
+          your unique needs and goals. We facilitate partnerships between individual patients, their personal
+          physicians,
+          and when appropriate, the patient's family.</em> </p>
+        <br>
+        <div class='about_ar_btn'>
+          <a href='#'>VIEW TIMETABLE</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <!-- ----OUR ADVANTAGES---------- -->
+
+  <div class="cont_encabezado">
+    <p>OUR ADVANTAGES</p>
+    <hr>
+  </div>
+  <section class="OUR_ADVANTAGES ancho ">
+    <article class="wow animate__animated animate__bounceInLeft  article_advantage">
+      <div class="cont_ico"><i class="fas fa-hand-holding-medical"></i></div>
+      <p class="titulo_advantage">QUALIFIED DOCTORS</p>
+      <p class="info_advantage">Our team is built of the best medical specialists representing virtually every medical
+        specialty to deliver top-notch services for you and your family.</p>
+    </article>
+    <article class="wow animate__animated animate__bounceInLeft  article_advantage">
+      <div class="cont_ico"><i class="fas fa-stethoscope"></i></i></div>
+      <p class="titulo_advantage">MODERN EQUIPMENT</p>
+      <p class="info_advantage">Our team is built of the best medical specialists representing virtually every medical
+        specialty to deliver top-notch services for you and your family.</p>
+    </article>
+    <article class="wow animate__animated animate__bounceInLeft article_advantage">
+      <div class="cont_ico"><i class="fas fa-syringe"></i> </i></div>
+      <p class="titulo_advantage">EMERGENCY HELP</p>
+      <p class="info_advantage">Our team is built of the best medical specialists representing virtually every medical
+        specialty to deliver top-notch services for you and your family.</p>
+    </article>
+    <article class="wow animate__animated animate__bounceInLeft  article_advantage ">
+      <div class="cont_ico"><i class="fas fa-thumbs-up"></i></i></div>
+      <p class="titulo_advantage">INDIVIDUAL APPROACH</p>
+      <p class="info_advantage">Our team is built of the best medical specialists representing virtually every medical
+        specialty to deliver top-notch services for you and your family.</p>
+    </article>
+  </section>
+  <!-- ------------------------------ ------- -->
+  <div class="cont_encabezado">
+    <p>LASTEST BLOG POSTS</p>
+    <hr>
+  </div>
+  <!-- ----LASTEST BLOG POSTS---------- -->
+  <section class="cont_lastest ancho">
+    <article class="article_lastest">
+      <figure class="banner"><img src="img/diagnostic.jpg" alt=""></figure>
+      <div class="cn"><a href="#" class="titulo_lastest">Picking the Right Diagnostic Services for Efficient Results</a>
+        <p class="parrafo_lastest">In recent years, a wide range of diagnostic tests has become available for use in
+          resource-constrained settings. Accordingly, a huge number of guidelines, performance evaluations and
+          implementation...</p>
+        <div class='cont_btn_'>
+          <a href='#'>CONTINUE READING</a>
+        </div>
+      </div>
+
+    </article>
+    <article class="article_lastest borde">
+      <figure class="banner"><img src="img/regularly.jpg" class="img100" alt=""></figure>
+      <div class="cn"><a href="#" class="titulo_lastest">Picking the Right Diagnostic Services for Efficient Results</a>
+        <p class="parrafo_lastest">In recent years, a wide range of diagnostic tests has become available for use in
+          resource-constrained settings. Accordingly, a huge number of guidelines, performance evaluations and
+          implementation...</p>
+        <div class='cont_btn_'>
+          <a href='#' class='btn_azul_menu '>CONTINUE READING</a>
+        </div>
+      </div>
+
+    </article>
+  </section>
+  <!-- ----------------------------------------- -->
+
+  <!-- ----------------------FOUDER------------------- -->
+  <footer>
+    <div class="cont_gris_footer ancho">
+      <div>
+        <figure class="borde"><img src="img/logo-footer.png" alt=""></figure>
+      </div>
+      <p class="privacy borde">© 2022 All Rights Reserved. Privacy Policy</p>
+      <div class="cont_redes_fotter borde">
+        <a href='#'><i class='fa-brands fa-facebook btn_facebook'></i></a><!-- icono facebook-->
+        <a href='#'><i class='fab fa-twitter btn_twitter'></i></a><!-- icono twitter-->
+        <a href='#'><i class='fa-brands fa-square-instagram btn_instagran'></i></a><!-- icono instagram-->
+        <a href='#'><i class='fab fa-google btn_google'></i></a><!-- icono google-->
+        <a href='#'><i class='fab fa-linkedin-in btn_linkedin'></i></a><!-- icono linkedin-->
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/funciones.js"></script>
+</body>
+
+</html>
